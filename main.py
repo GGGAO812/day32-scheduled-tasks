@@ -5,8 +5,8 @@ import pandas
 import random
 
 
-os.environ.get("MY_EMAIL")
-os.environ.get("MY_PASSWORD")
+MY_EMAIL = os.environ.get("MY_EMAIL")
+MY_PASSWORD = os.environ.get("MY_PASSWORD")
 
 data = pandas.read_csv("birthdays.csv")
 dd = data.to_dict(orient="records")

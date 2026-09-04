@@ -27,7 +27,7 @@ api_key = os.environ.get("API_KEY")
 weather_parameter = {"lat":26.05,
              "lon":119.18,
              "cnt":4,
-             "appid":api_key
+             "appid":os.environ.get("API_KEY")
              }
 
 response = requests.get(OWM_Endpoint, params=weather_parameter)

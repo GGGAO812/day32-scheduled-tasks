@@ -32,7 +32,7 @@ weather_parameter = {"lat":26.05,
 
 response = requests.get(OWM_Endpoint, params=weather_parameter)
 # print(response.status_code)
-response.raise_for_status()
+# response.raise_for_status()
 weather_data = response.json()
 
 will_rain = False
